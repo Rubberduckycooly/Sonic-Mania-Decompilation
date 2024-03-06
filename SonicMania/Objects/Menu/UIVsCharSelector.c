@@ -248,7 +248,7 @@ void UIVsCharSelector_ProcessButtonCB(void)
         while (self->frameID < 0) self->frameID += max;
         while (self->frameID >= max) self->frameID -= max;
 
-#if GAME_VERSION != VER_100
+#if MANIA_USE_PLUS
         int32 activePlayers = 0;
 
         for (int32 i = 0; i < parent->buttonCount; ++i) {
